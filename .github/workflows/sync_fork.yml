@@ -15,6 +15,6 @@ jobs:
         with:
           owner: Fraunhofer-IMS
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          base: master
-          head: master
+          base: main
+          head: main
           merge_method: rebase
