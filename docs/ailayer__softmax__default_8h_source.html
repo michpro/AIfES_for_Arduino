@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AIfES 2: D:/Projekte/AIfES_GitRepos/aifes_int/include/basic/default/ailayer/ailayer_softmax_default.h Source File</title>
+<title>AIfES 2: /builds/ims-esa/aifes_2/include/basic/default/ailayer/ailayer_softmax_default.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,23 +95,48 @@ $(document).ready(function(){initNavTree('ailayer__softmax__default_8h_source.ht
 </div><!--header-->
 <div class="contents">
 <a href="ailayer__softmax__default_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef AILAYER_SOFTMAX_DEFAULT</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define AILAYER_SOFTMAX_DEFAULT</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ailayer__softmax_8h.html">basic/base/ailayer/ailayer_softmax.h</a>&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="aimath__f32__default_8h.html">basic/default/aimath/aimath_f32_default.h</a>&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structailayer__softmax.html">ailayer_softmax</a>  <a class="code" href="structailayer__softmax.html">ailayer_softmax_f32_t</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="ailayer__softmax__default_8h.html#a3a89bb8691ee208550e0b267355679ea">   54</a></span>&#160;<a class="code" href="structailayer.html">ailayer_t</a> *<a class="code" href="ailayer__softmax__default_8h.html#a3a89bb8691ee208550e0b267355679ea">ailayer_softmax_f32_default</a>(<a class="code" href="structailayer__softmax.html">ailayer_softmax_f32_t</a> *layer, <a class="code" href="structailayer.html">ailayer_t</a> *input_layer);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// AILAYER_SOFTMAX_DEFAULT</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifndef AILAYER_SOFTMAX_DEFAULT</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define AILAYER_SOFTMAX_DEFAULT</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ailayer__softmax_8h.html">basic/base/ailayer/ailayer_softmax.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="aimath__f32__default_8h.html">basic/default/aimath/aimath_f32_default.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="aimath__q31__default_8h.html">basic/default/aimath/aimath_q31_default.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="aimath__q7__default_8h.html">basic/default/aimath/aimath_q7_default.h</a>&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#define AILAYER_SOFTMAX_F32_M()         {{0,}}</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define AILAYER_SOFTMAX_F32_A()         {{0,}}</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define AILAYER_SOFTMAX_Q31_M()         {{0,}}</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#define AILAYER_SOFTMAX_Q31_A()         {{0,}}</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#define AILAYER_SOFTMAX_Q7_M()          {{0,}}</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#define AILAYER_SOFTMAX_Q7_A()          {{0,}}</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structailayer__softmax.html">ailayer_softmax</a>  <a class="code" href="structailayer__softmax.html">ailayer_softmax_f32_t</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structailayer__softmax.html">ailayer_softmax</a>  <a class="code" href="structailayer__softmax.html">ailayer_softmax_q31_t</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structailayer__softmax.html">ailayer_softmax</a>  <a class="code" href="structailayer__softmax.html">ailayer_softmax_q7_t</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="ailayer__softmax__default_8h.html#a3a89bb8691ee208550e0b267355679ea">   66</a></span>&#160;<a class="code" href="structailayer.html">ailayer_t</a> *<a class="code" href="ailayer__softmax__default_8h.html#a3a89bb8691ee208550e0b267355679ea">ailayer_softmax_f32_default</a>(<a class="code" href="structailayer__softmax.html">ailayer_softmax_f32_t</a> *layer, <a class="code" href="structailayer.html">ailayer_t</a> *input_layer);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="ailayer__softmax__default_8h.html#aabdf9e2b722406165c4e28a0c8c29a18">   91</a></span>&#160;<a class="code" href="structailayer.html">ailayer_t</a> *<a class="code" href="ailayer__softmax__default_8h.html#aabdf9e2b722406165c4e28a0c8c29a18">ailayer_softmax_q31_default</a>(<a class="code" href="structailayer__softmax.html">ailayer_softmax_q31_t</a> *layer, <a class="code" href="structailayer.html">ailayer_t</a> *input_layer);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="ailayer__softmax__default_8h.html#a469403b690f21b4025bd5443bf6af11d">  116</a></span>&#160;<a class="code" href="structailayer.html">ailayer_t</a> *<a class="code" href="ailayer__softmax__default_8h.html#a469403b690f21b4025bd5443bf6af11d">ailayer_softmax_q7_default</a>(<a class="code" href="structailayer__softmax.html">ailayer_softmax_q7_t</a> *layer, <a class="code" href="structailayer.html">ailayer_t</a> *input_layer);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="ailayer__softmax__default_8h.html#a8037b9cd851dd10f715f113107ad8c6b">  126</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ailayer__softmax__default_8h.html#a8037b9cd851dd10f715f113107ad8c6b">ailayer_softmax_calc_result_tensor_params_q31_default</a>(<a class="code" href="structailayer.html">ailayer_t</a> *<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="ailayer__softmax__default_8h.html#abc1623eb58ecc09009b80f3843a972eb">  136</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ailayer__softmax__default_8h.html#abc1623eb58ecc09009b80f3843a972eb">ailayer_softmax_calc_result_tensor_params_q7_default</a>(<a class="code" href="structailayer.html">ailayer_t</a> *<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// AILAYER_SOFTMAX_DEFAULT</span></div>
 <div class="ttc" id="aailayer__softmax_8h_html"><div class="ttname"><a href="ailayer__softmax_8h.html">ailayer_softmax.h</a></div><div class="ttdoc">Base layer  implementation of the Softmax activation layer.</div></div>
 <div class="ttc" id="aailayer__softmax__default_8h_html_a3a89bb8691ee208550e0b267355679ea"><div class="ttname"><a href="ailayer__softmax__default_8h.html#a3a89bb8691ee208550e0b267355679ea">ailayer_softmax_f32_default</a></div><div class="ttdeci">ailayer_t * ailayer_softmax_f32_default(ailayer_softmax_f32_t *layer, ailayer_t *input_layer)</div><div class="ttdoc">Initializes and connect an Softmax layer  with the F32  default implementation.</div></div>
+<div class="ttc" id="aailayer__softmax__default_8h_html_a469403b690f21b4025bd5443bf6af11d"><div class="ttname"><a href="ailayer__softmax__default_8h.html#a469403b690f21b4025bd5443bf6af11d">ailayer_softmax_q7_default</a></div><div class="ttdeci">ailayer_t * ailayer_softmax_q7_default(ailayer_softmax_q7_t *layer, ailayer_t *input_layer)</div><div class="ttdoc">Initializes and connects an Softmax layer  with the Q7  default implementation.</div></div>
+<div class="ttc" id="aailayer__softmax__default_8h_html_a8037b9cd851dd10f715f113107ad8c6b"><div class="ttname"><a href="ailayer__softmax__default_8h.html#a8037b9cd851dd10f715f113107ad8c6b">ailayer_softmax_calc_result_tensor_params_q31_default</a></div><div class="ttdeci">void ailayer_softmax_calc_result_tensor_params_q31_default(ailayer_t *self)</div><div class="ttdoc">Calculate and set the quantization parameters for the result tensor of the softmax Q31  default imple...</div></div>
+<div class="ttc" id="aailayer__softmax__default_8h_html_aabdf9e2b722406165c4e28a0c8c29a18"><div class="ttname"><a href="ailayer__softmax__default_8h.html#aabdf9e2b722406165c4e28a0c8c29a18">ailayer_softmax_q31_default</a></div><div class="ttdeci">ailayer_t * ailayer_softmax_q31_default(ailayer_softmax_q31_t *layer, ailayer_t *input_layer)</div><div class="ttdoc">Initializes and connects an Softmax layer  with the Q31  default implementation.</div></div>
+<div class="ttc" id="aailayer__softmax__default_8h_html_abc1623eb58ecc09009b80f3843a972eb"><div class="ttname"><a href="ailayer__softmax__default_8h.html#abc1623eb58ecc09009b80f3843a972eb">ailayer_softmax_calc_result_tensor_params_q7_default</a></div><div class="ttdeci">void ailayer_softmax_calc_result_tensor_params_q7_default(ailayer_t *self)</div><div class="ttdoc">Calculate and set the quantization parameters for the result tensor of the softmax Q7  default implem...</div></div>
 <div class="ttc" id="aaimath__f32__default_8h_html"><div class="ttname"><a href="aimath__f32__default_8h.html">aimath_f32_default.h</a></div><div class="ttdoc">Math functions for F32  data type, default implementation.</div></div>
-<div class="ttc" id="astructailayer__softmax_html"><div class="ttname"><a href="structailayer__softmax.html">ailayer_softmax</a></div><div class="ttdoc">General Softmax layer  struct.</div><div class="ttdef"><b>Definition:</b> ailayer_softmax.h:54</div></div>
-<div class="ttc" id="astructailayer_html"><div class="ttname"><a href="structailayer.html">ailayer</a></div><div class="ttdoc">AIfES layer interface.</div><div class="ttdef"><b>Definition:</b> aifes_core.h:251</div></div>
+<div class="ttc" id="aaimath__q31__default_8h_html"><div class="ttname"><a href="aimath__q31__default_8h.html">aimath_q31_default.h</a></div><div class="ttdoc">Math functions for Q31  data type, default implementation.</div></div>
+<div class="ttc" id="aaimath__q7__default_8h_html"><div class="ttname"><a href="aimath__q7__default_8h.html">aimath_q7_default.h</a></div><div class="ttdoc">Math functions for Q7  data type, default implementation.</div></div>
+<div class="ttc" id="astructailayer__softmax_html"><div class="ttname"><a href="structailayer__softmax.html">ailayer_softmax</a></div><div class="ttdoc">General Softmax layer  struct.</div><div class="ttdef"><b>Definition:</b> ailayer_softmax.h:51</div></div>
+<div class="ttc" id="astructailayer_html"><div class="ttname"><a href="structailayer.html">ailayer</a></div><div class="ttdoc">AIfES layer interface.</div><div class="ttdef"><b>Definition:</b> aifes_core.h:249</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

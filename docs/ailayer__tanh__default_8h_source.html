@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AIfES 2: D:/Projekte/AIfES_GitRepos/aifes_int/include/basic/default/ailayer/ailayer_tanh_default.h Source File</title>
+<title>AIfES 2: /builds/ims-esa/aifes_2/include/basic/default/ailayer/ailayer_tanh_default.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,26 +95,48 @@ $(document).ready(function(){initNavTree('ailayer__tanh__default_8h_source.html'
 </div><!--header-->
 <div class="contents">
 <a href="ailayer__tanh__default_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifndef AILAYER_TANH_DEFAULT</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define AILAYER_TANH_DEFAULT</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ailayer__tanh_8h.html">basic/base/ailayer/ailayer_tanh.h</a>&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="aimath__f32__default_8h.html">basic/default/aimath/aimath_f32_default.h</a>&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structailayer__tanh.html">ailayer_tanh</a>     <a class="code" href="structailayer__tanh.html">ailayer_tanh_f32_t</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="ailayer__tanh__default_8h.html#a80b4a962ca942bf21c936b66ea8ad948">   57</a></span>&#160;<a class="code" href="structailayer.html">ailayer_t</a> *<a class="code" href="ailayer__tanh__default_8h.html#a80b4a962ca942bf21c936b66ea8ad948">ailayer_tanh_f32_default</a>(<a class="code" href="structailayer__tanh.html">ailayer_tanh_f32_t</a> *layer, <a class="code" href="structailayer.html">ailayer_t</a> *input_layer);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="ailayer__tanh__default_8h.html#a03418b2d18aedd1bd8c843f099045ab4">   68</a></span>&#160;uint8_t <a class="code" href="ailayer__tanh__default_8h.html#a03418b2d18aedd1bd8c843f099045ab4">ailayer_tanh_get_result_bound_f32_default</a>(<span class="keyword">const</span> <a class="code" href="structailayer.html">ailayer_t</a> *<span class="keyword">self</span>, <span class="keyword">const</span> uint8_t selector, <span class="keywordtype">void</span> *result_bound);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// AILAYER_TANH_DEFAULT</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef AILAYER_TANH_DEFAULT</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define AILAYER_TANH_DEFAULT</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ailayer__tanh_8h.html">basic/base/ailayer/ailayer_tanh.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="aimath__f32__default_8h.html">basic/default/aimath/aimath_f32_default.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="aimath__q31__default_8h.html">basic/default/aimath/aimath_q31_default.h</a>&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="aimath__q7__default_8h.html">basic/default/aimath/aimath_q7_default.h</a>&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define AILAYER_TANH_F32_M()        {{0,}}</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define AILAYER_TANH_F32_A()        {{0,}}</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#define AILAYER_TANH_Q31_M()        {{0,}}</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#define AILAYER_TANH_Q31_A()        {{0,}}</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#define AILAYER_TANH_Q7_M()         {{0,}}</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define AILAYER_TANH_Q7_A()         {{0,}}</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structailayer__tanh.html">ailayer_tanh</a>     <a class="code" href="structailayer__tanh.html">ailayer_tanh_f32_t</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structailayer__tanh.html">ailayer_tanh</a>     <a class="code" href="structailayer__tanh.html">ailayer_tanh_q31_t</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structailayer__tanh.html">ailayer_tanh</a>     <a class="code" href="structailayer__tanh.html">ailayer_tanh_q7_t</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="ailayer__tanh__default_8h.html#a80b4a962ca942bf21c936b66ea8ad948">   69</a></span>&#160;<a class="code" href="structailayer.html">ailayer_t</a> *<a class="code" href="ailayer__tanh__default_8h.html#a80b4a962ca942bf21c936b66ea8ad948">ailayer_tanh_f32_default</a>(<a class="code" href="structailayer__tanh.html">ailayer_tanh_f32_t</a> *layer, <a class="code" href="structailayer.html">ailayer_t</a> *input_layer);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="ailayer__tanh__default_8h.html#a07522d6a43bd3ee674737697fcf191a6">   94</a></span>&#160;<a class="code" href="structailayer.html">ailayer_t</a> *<a class="code" href="ailayer__tanh__default_8h.html#a07522d6a43bd3ee674737697fcf191a6">ailayer_tanh_q31_default</a>(<a class="code" href="structailayer__tanh.html">ailayer_tanh_q31_t</a> *layer, <a class="code" href="structailayer.html">ailayer_t</a> *input_layer);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="ailayer__tanh__default_8h.html#ac27a188a1d716d8d1fa04469bdeccc87">  119</a></span>&#160;<a class="code" href="structailayer.html">ailayer_t</a> *<a class="code" href="ailayer__tanh__default_8h.html#ac27a188a1d716d8d1fa04469bdeccc87">ailayer_tanh_q7_default</a>(<a class="code" href="structailayer__tanh.html">ailayer_tanh_q7_t</a> *layer, <a class="code" href="structailayer.html">ailayer_t</a> *input_layer);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="ailayer__tanh__default_8h.html#afb52b10c0d1180b5d4b45a6dc02c7b14">  129</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ailayer__tanh__default_8h.html#afb52b10c0d1180b5d4b45a6dc02c7b14">ailayer_tanh_calc_result_tensor_params_q31_default</a>(<a class="code" href="structailayer.html">ailayer_t</a> *<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="ailayer__tanh__default_8h.html#af23f7e1a52355597785cd038901c134c">  139</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ailayer__tanh__default_8h.html#af23f7e1a52355597785cd038901c134c">ailayer_tanh_calc_result_tensor_params_q7_default</a>(<a class="code" href="structailayer.html">ailayer_t</a> *<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// AILAYER_TANH_DEFAULT</span></div>
 <div class="ttc" id="aailayer__tanh_8h_html"><div class="ttname"><a href="ailayer__tanh_8h.html">ailayer_tanh.h</a></div><div class="ttdoc">Base layer  implementation of the Tanh activation layer.</div></div>
-<div class="ttc" id="aailayer__tanh__default_8h_html_a03418b2d18aedd1bd8c843f099045ab4"><div class="ttname"><a href="ailayer__tanh__default_8h.html#a03418b2d18aedd1bd8c843f099045ab4">ailayer_tanh_get_result_bound_f32_default</a></div><div class="ttdeci">uint8_t ailayer_tanh_get_result_bound_f32_default(const ailayer_t *self, const uint8_t selector, void *result_bound)</div><div class="ttdoc">Get valid value range of output of tanh layer.</div></div>
+<div class="ttc" id="aailayer__tanh__default_8h_html_a07522d6a43bd3ee674737697fcf191a6"><div class="ttname"><a href="ailayer__tanh__default_8h.html#a07522d6a43bd3ee674737697fcf191a6">ailayer_tanh_q31_default</a></div><div class="ttdeci">ailayer_t * ailayer_tanh_q31_default(ailayer_tanh_q31_t *layer, ailayer_t *input_layer)</div><div class="ttdoc">Initializes and connect a Tanh layer  with the Q31  default implementation.</div></div>
 <div class="ttc" id="aailayer__tanh__default_8h_html_a80b4a962ca942bf21c936b66ea8ad948"><div class="ttname"><a href="ailayer__tanh__default_8h.html#a80b4a962ca942bf21c936b66ea8ad948">ailayer_tanh_f32_default</a></div><div class="ttdeci">ailayer_t * ailayer_tanh_f32_default(ailayer_tanh_f32_t *layer, ailayer_t *input_layer)</div><div class="ttdoc">Initializes and connect an Tanh layer  with the F32  default implementation.</div></div>
+<div class="ttc" id="aailayer__tanh__default_8h_html_ac27a188a1d716d8d1fa04469bdeccc87"><div class="ttname"><a href="ailayer__tanh__default_8h.html#ac27a188a1d716d8d1fa04469bdeccc87">ailayer_tanh_q7_default</a></div><div class="ttdeci">ailayer_t * ailayer_tanh_q7_default(ailayer_tanh_q7_t *layer, ailayer_t *input_layer)</div><div class="ttdoc">Initializes and connect a Tanh layer  with the Q7  default implementation.</div></div>
+<div class="ttc" id="aailayer__tanh__default_8h_html_af23f7e1a52355597785cd038901c134c"><div class="ttname"><a href="ailayer__tanh__default_8h.html#af23f7e1a52355597785cd038901c134c">ailayer_tanh_calc_result_tensor_params_q7_default</a></div><div class="ttdeci">void ailayer_tanh_calc_result_tensor_params_q7_default(ailayer_t *self)</div><div class="ttdoc">Calculate and set the quantization parameters for the result tensor of the tanh Q7  default implement...</div></div>
+<div class="ttc" id="aailayer__tanh__default_8h_html_afb52b10c0d1180b5d4b45a6dc02c7b14"><div class="ttname"><a href="ailayer__tanh__default_8h.html#afb52b10c0d1180b5d4b45a6dc02c7b14">ailayer_tanh_calc_result_tensor_params_q31_default</a></div><div class="ttdeci">void ailayer_tanh_calc_result_tensor_params_q31_default(ailayer_t *self)</div><div class="ttdoc">Calculate and set the quantization parameters for the result tensor of the tanh Q31  default implemen...</div></div>
 <div class="ttc" id="aaimath__f32__default_8h_html"><div class="ttname"><a href="aimath__f32__default_8h.html">aimath_f32_default.h</a></div><div class="ttdoc">Math functions for F32  data type, default implementation.</div></div>
-<div class="ttc" id="astructailayer__tanh_html"><div class="ttname"><a href="structailayer__tanh.html">ailayer_tanh</a></div><div class="ttdoc">General Tanh layer  struct.</div><div class="ttdef"><b>Definition:</b> ailayer_tanh.h:50</div></div>
-<div class="ttc" id="astructailayer_html"><div class="ttname"><a href="structailayer.html">ailayer</a></div><div class="ttdoc">AIfES layer interface.</div><div class="ttdef"><b>Definition:</b> aifes_core.h:251</div></div>
+<div class="ttc" id="aaimath__q31__default_8h_html"><div class="ttname"><a href="aimath__q31__default_8h.html">aimath_q31_default.h</a></div><div class="ttdoc">Math functions for Q31  data type, default implementation.</div></div>
+<div class="ttc" id="aaimath__q7__default_8h_html"><div class="ttname"><a href="aimath__q7__default_8h.html">aimath_q7_default.h</a></div><div class="ttdoc">Math functions for Q7  data type, default implementation.</div></div>
+<div class="ttc" id="astructailayer__tanh_html"><div class="ttname"><a href="structailayer__tanh.html">ailayer_tanh</a></div><div class="ttdoc">General Tanh layer  struct.</div><div class="ttdef"><b>Definition:</b> ailayer_tanh.h:47</div></div>
+<div class="ttc" id="astructailayer_html"><div class="ttname"><a href="structailayer.html">ailayer</a></div><div class="ttdoc">AIfES layer interface.</div><div class="ttdef"><b>Definition:</b> aifes_core.h:249</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

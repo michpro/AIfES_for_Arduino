@@ -2,9 +2,9 @@ var structailayer =
 [
     [ "backward", "structailayer.html#a235e06f76bc9641b9c9b95ae29b56fe9", null ],
     [ "calc_result_shape", "structailayer.html#a66787e37cfd371070476221e86386f7c", null ],
+    [ "calc_result_tensor_params", "structailayer.html#ab5e8fd65efe85a1ee1ac9147594ddd61", null ],
     [ "deltas", "structailayer.html#a6e0cd193754d9614d5da823f0f0fcbf6", null ],
     [ "forward", "structailayer.html#a5fbd0ec6a416b01399233d98e60ca060", null ],
-    [ "get_result_bound", "structailayer.html#a6bc24e01b52600df11489aca5b525a53", null ],
     [ "gradients", "structailayer.html#adf565818ce1d94c39e818326a25a6de8", null ],
     [ "input_layer", "structailayer.html#a708a94e69112ad215b2b52da2238a711", null ],
     [ "layer_configuration", "structailayer.html#a27d1eadee2654a2bd6e740eff4004ba8", null ],

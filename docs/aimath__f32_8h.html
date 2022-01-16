@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AIfES 2: D:/Projekte/AIfES_GitRepos/aifes_int/include/basic/base/aimath/aimath_f32.h File Reference</title>
+<title>AIfES 2: /builds/ims-esa/aifes_2/include/basic/base/aimath/aimath_f32.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -115,9 +115,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a35be372b71f7d1cbeffa157448fe7c31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aimath__f32_8h.html#a35be372b71f7d1cbeffa157448fe7c31">aimath_f32_print_aitensor</a> (const <a class="el" href="structaitensor.html">aitensor_t</a> *tensor)</td></tr>
 <tr class="memdesc:a35be372b71f7d1cbeffa157448fe7c31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Printing a F32 tensor to console.  <a href="aimath__f32_8h.html#a35be372b71f7d1cbeffa157448fe7c31">More...</a><br /></td></tr>
 <tr class="separator:a35be372b71f7d1cbeffa157448fe7c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c606da5821223089403a30d5056a3f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aimath__f32_8h.html#a8c606da5821223089403a30d5056a3f6">aimath_f32_print_aiscalar</a> (const void *scalar, int(*print)(const char *format,...))</td></tr>
-<tr class="memdesc:a8c606da5821223089403a30d5056a3f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Printing a F32 scalar to console.  <a href="aimath__f32_8h.html#a8c606da5821223089403a30d5056a3f6">More...</a><br /></td></tr>
-<tr class="separator:a8c606da5821223089403a30d5056a3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a71af5b0db68ff71ef6399f90f36cac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aimath__f32_8h.html#a5a71af5b0db68ff71ef6399f90f36cac">aimath_f32_print_aiscalar</a> (const void *scalar)</td></tr>
+<tr class="memdesc:a5a71af5b0db68ff71ef6399f90f36cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Printing a F32 scalar to console.  <a href="aimath__f32_8h.html#a5a71af5b0db68ff71ef6399f90f36cac">More...</a><br /></td></tr>
+<tr class="separator:a5a71af5b0db68ff71ef6399f90f36cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -128,16 +128,19 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Definition of the F32 (aif32) data-type. </p>
 <dl class="section version"><dt>Version</dt><dd>2.0alpha </dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (C) 2020-2021 Fraunhofer Institute for Microelectronic Circuits and Systems. All rights reserved.</dd></dl>
-<p>AIfES is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
-<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
-<p>You should have received a copy of the GNU General Public License along with this program. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</p>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (C) 2020-2021 Fraunhofer Institute for Microelectronic Circuits and Systems. All rights reserved.<br  />
+<br  />
+ AIfES is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.<br  />
+<br  />
+ This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.<br  />
+<br  />
+ You should have received a copy of the GNU Affero General Public License along with this program. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</dd></dl>
 <p>The F32 (aif32) data-type stores data as 32 bit single precision floating point values. It does not require any additional parameter to define the values.</p>
 <p><b>Example: Create a F32 tensor</b><br  />
 The tensor </p><p class="formulaDsp">
 \[ \left( \begin{array}{rrr} 0 &amp; 1 &amp; 2 \\ 3 &amp; 4 &amp; 5 \end{array}\right) \]
 </p>
-<p> can be created with </p><div class="fragment"><div class="line"><span class="keywordtype">float</span> example_data[] = {0.0f, 1.0f, 2.0f,</div>
+<p> can be created with In C: </p><div class="fragment"><div class="line"><span class="keywordtype">float</span> example_data[] = {0.0f, 1.0f, 2.0f,</div>
 <div class="line">                        3.0f, 4.0f, 5.0f};</div>
 <div class="line">uint16_t example_shape[] = {2, 3};</div>
 <div class="line"><a class="code" href="structaitensor.html">aitensor_t</a> example_tensor = {</div>
@@ -147,12 +150,16 @@ The tensor </p><p class="formulaDsp">
 <div class="line">    .data = example_data</div>
 <div class="line">};</div>
 <div class="ttc" id="aaimath__f32_8h_html_a06eea7384624233f57daab2648d8ce37"><div class="ttname"><a href="aimath__f32_8h.html#a06eea7384624233f57daab2648d8ce37">aif32</a></div><div class="ttdeci">const aimath_dtype_t * aif32</div><div class="ttdoc">The F32 data-type indicator.</div></div>
-<div class="ttc" id="astructaitensor_html"><div class="ttname"><a href="structaitensor.html">aitensor</a></div><div class="ttdoc">A tensor in AIfES.</div><div class="ttdef"><b>Definition:</b> aifes_math.h:98</div></div>
-<div class="ttc" id="astructaitensor_html_abf7a461af7296a09d5246ca13591b988"><div class="ttname"><a href="structaitensor.html#abf7a461af7296a09d5246ca13591b988">aitensor::dtype</a></div><div class="ttdeci">const aimath_dtype_t * dtype</div><div class="ttdoc">The datatype of the tensor, e.g.</div><div class="ttdef"><b>Definition:</b> aifes_math.h:99</div></div>
+<div class="ttc" id="astructaitensor_html"><div class="ttname"><a href="structaitensor.html">aitensor</a></div><div class="ttdoc">A tensor in AIfES.</div><div class="ttdef"><b>Definition:</b> aifes_math.h:89</div></div>
+<div class="ttc" id="astructaitensor_html_abf7a461af7296a09d5246ca13591b988"><div class="ttname"><a href="structaitensor.html#abf7a461af7296a09d5246ca13591b988">aitensor::dtype</a></div><div class="ttdeci">const aimath_dtype_t * dtype</div><div class="ttdoc">The datatype of the tensor, e.g.</div><div class="ttdef"><b>Definition:</b> aifes_math.h:90</div></div>
+</div><!-- fragment --><p> In C, C++ and on Arduino: </p><div class="fragment"><div class="line"><span class="keywordtype">float</span> example_data[] = {0.0f, 1.0f, 2.0f,</div>
+<div class="line">                        3.0f, 4.0f, 5.0f};</div>
+<div class="line">uint16_t example_shape[] = {2, 3};</div>
+<div class="line"><a class="code" href="structaitensor.html">aitensor_t</a> example_tensor = AITENSOR_2D_F32(example_shape, example_data);</div>
 </div><!-- fragment --><p><b>Example: Create a F32 scalar</b><br  />
 Either create it as a normal float value </p><div class="fragment"><div class="line"><span class="keywordtype">float</span> scalar = 42.0f;</div>
 </div><!-- fragment --><p> or with the alias </p><div class="fragment"><div class="line"><a class="code" href="aimath__f32_8h.html#ad3ffba87614778a1d8ee2314117ff59c">aiscalar_f32_t</a> scalar = 42.0f;</div>
-<div class="ttc" id="aaimath__f32_8h_html_ad3ffba87614778a1d8ee2314117ff59c"><div class="ttname"><a href="aimath__f32_8h.html#ad3ffba87614778a1d8ee2314117ff59c">aiscalar_f32_t</a></div><div class="ttdeci">float aiscalar_f32_t</div><div class="ttdoc">Scalar for F32 (aif32) data-type.</div><div class="ttdef"><b>Definition:</b> aimath_f32.h:101</div></div>
+<div class="ttc" id="aaimath__f32_8h_html_ad3ffba87614778a1d8ee2314117ff59c"><div class="ttname"><a href="aimath__f32_8h.html#ad3ffba87614778a1d8ee2314117ff59c">aiscalar_f32_t</a></div><div class="ttdeci">float aiscalar_f32_t</div><div class="ttdoc">Scalar for F32 (aif32) data-type.</div><div class="ttdef"><b>Definition:</b> aimath_f32.h:106</div></div>
 </div><!-- fragment --><p><b>Example: Print a F32 tensor to the console</b> </p><div class="fragment"><div class="line"><a class="code" href="aimath__basic_8h.html#ab10c8d06990943806f0be8fcc6af03fc">print_aitensor</a>(&amp;example_tensor);</div>
 <div class="ttc" id="aaimath__basic_8h_html_ab10c8d06990943806f0be8fcc6af03fc"><div class="ttname"><a href="aimath__basic_8h.html#ab10c8d06990943806f0be8fcc6af03fc">print_aitensor</a></div><div class="ttdeci">void print_aitensor(const aitensor_t *tensor)</div><div class="ttdoc">Printing a tensor to console.</div></div>
 </div><!-- fragment --><p><b>Example: Print a F32 scalar to the console</b> </p><div class="fragment"><div class="line"><a class="code" href="aimath__basic_8h.html#aaa9ca757028820849ef3dde13cc46565">print_aiscalar</a>(&amp;scalar, <a class="code" href="aimath__f32_8h.html#a06eea7384624233f57daab2648d8ce37">aif32</a>);</div>
@@ -175,14 +182,14 @@ Either create it as a normal float value </p><div class="fragment"><div class="l
 You can create a F32 scalar either as a normal float value </p><div class="fragment"><div class="line"><span class="keywordtype">float</span> scalar = 42.0f;</div>
 </div><!-- fragment --><p> or with the alias </p><div class="fragment"><div class="line"><a class="code" href="aimath__f32_8h.html#ad3ffba87614778a1d8ee2314117ff59c">aiscalar_f32_t</a> scalar = 42.0f;</div>
 </div><!-- fragment --><p>You can print the scalar to the console with </p><div class="fragment"><div class="line"><a class="code" href="aimath__basic_8h.html#aaa9ca757028820849ef3dde13cc46565">print_aiscalar</a>(&amp;scalar, <a class="code" href="aimath__f32_8h.html#a06eea7384624233f57daab2648d8ce37">aif32</a>);</div>
-</div><!-- fragment --><p> or by using </p><div class="fragment"><div class="line"><a class="code" href="aimath__f32_8h.html#a8c606da5821223089403a30d5056a3f6">aimath_f32_print_aiscalar</a>(&amp;scalar, printf);</div>
-<div class="ttc" id="aaimath__f32_8h_html_a8c606da5821223089403a30d5056a3f6"><div class="ttname"><a href="aimath__f32_8h.html#a8c606da5821223089403a30d5056a3f6">aimath_f32_print_aiscalar</a></div><div class="ttdeci">void aimath_f32_print_aiscalar(const void *scalar, int(*print)(const char *format,...))</div><div class="ttdoc">Printing a F32 scalar to console.</div></div>
+</div><!-- fragment --><p> or by using </p><div class="fragment"><div class="line"><a class="code" href="aimath__f32_8h.html#a5a71af5b0db68ff71ef6399f90f36cac">aimath_f32_print_aiscalar</a>(&amp;scalar, printf);</div>
+<div class="ttc" id="aaimath__f32_8h_html_a5a71af5b0db68ff71ef6399f90f36cac"><div class="ttname"><a href="aimath__f32_8h.html#a5a71af5b0db68ff71ef6399f90f36cac">aimath_f32_print_aiscalar</a></div><div class="ttdeci">void aimath_f32_print_aiscalar(const void *scalar)</div><div class="ttdoc">Printing a F32 scalar to console.</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a8c606da5821223089403a30d5056a3f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c606da5821223089403a30d5056a3f6">&#9670;&nbsp;</a></span>aimath_f32_print_aiscalar()</h2>
+<a id="a5a71af5b0db68ff71ef6399f90f36cac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a71af5b0db68ff71ef6399f90f36cac">&#9670;&nbsp;</a></span>aimath_f32_print_aiscalar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,18 +198,8 @@ You can create a F32 scalar either as a normal float value </p><div class="fragm
           <td class="memname">void aimath_f32_print_aiscalar </td>
           <td>(</td>
           <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>scalar</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>scalar</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int(*)(const char *format,...)&#160;</td>
-          <td class="paramname"><em>print</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -213,7 +210,6 @@ You can create a F32 scalar either as a normal float value </p><div class="fragm
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">*scalar</td><td>The scalar (type: float) to print. </td></tr>
-    <tr><td class="paramname">*print</td><td>The print function to use </td></tr>
   </table>
   </dd>
 </dl>

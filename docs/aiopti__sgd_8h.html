@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AIfES 2: D:/Projekte/AIfES_GitRepos/aifes_int/include/basic/base/aiopti/aiopti_sgd.h File Reference</title>
+<title>AIfES 2: /builds/ims-esa/aifes_2/include/basic/base/aiopti/aiopti_sgd.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -144,9 +144,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aee9b5291db920666251e7556894b79f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiopti__sgd_8h.html#aee9b5291db920666251e7556894b79f7">aiopti_sgd_update_params_without_momentum</a> (<a class="el" href="structaiopti.html">aiopti_t</a> *self, <a class="el" href="structaitensor.html">aitensor_t</a> *params, const <a class="el" href="structaitensor.html">aitensor_t</a> *gradients, void *optimem)</td></tr>
 <tr class="memdesc:aee9b5291db920666251e7556894b79f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the given parameter tensor with respect to the gradients when the momentum is zero.  <a href="aiopti__sgd_8h.html#aee9b5291db920666251e7556894b79f7">More...</a><br /></td></tr>
 <tr class="separator:aee9b5291db920666251e7556894b79f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0df309c94d9309f2bd8b3669782e9ec0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiopti__sgd_8h.html#a0df309c94d9309f2bd8b3669782e9ec0">aiopti_sgd_print_specs</a> (const <a class="el" href="structaiopti.html">aiopti_t</a> *self, int(*print)(const char *format,...))</td></tr>
-<tr class="memdesc:a0df309c94d9309f2bd8b3669782e9ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the optimizer specification.  <a href="aiopti__sgd_8h.html#a0df309c94d9309f2bd8b3669782e9ec0">More...</a><br /></td></tr>
-<tr class="separator:a0df309c94d9309f2bd8b3669782e9ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935e38eb3fc504e1c63406b48ad404cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiopti__sgd_8h.html#a935e38eb3fc504e1c63406b48ad404cd">aiopti_sgd_print_specs</a> (const <a class="el" href="structaiopti.html">aiopti_t</a> *self)</td></tr>
+<tr class="memdesc:a935e38eb3fc504e1c63406b48ad404cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the optimizer specification.  <a href="aiopti__sgd_8h.html#a935e38eb3fc504e1c63406b48ad404cd">More...</a><br /></td></tr>
+<tr class="separator:a935e38eb3fc504e1c63406b48ad404cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -157,10 +157,13 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base <a class="el" href="structaiopti.html">optimizer </a> implementation of the Stochastic Gradient Descent (with momentum) optimizer. </p>
 <dl class="section version"><dt>Version</dt><dd>2.0alpha </dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (C) 2020-2021 Fraunhofer Institute for Microelectronic Circuits and Systems. All rights reserved.</dd></dl>
-<p>AIfES is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
-<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
-<p>You should have received a copy of the GNU General Public License along with this program. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</p>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (C) 2020-2021 Fraunhofer Institute for Microelectronic Circuits and Systems. All rights reserved.<br  />
+<br  />
+ AIfES is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.<br  />
+<br  />
+ This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.<br  />
+<br  />
+ You should have received a copy of the GNU Affero General Public License along with this program. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</dd></dl>
 <p>This is an "abstract" data-type independent implementation. To use the optimizer, use one of the provided implementations for a specific hardware and data-type (for example from <a class="el" href="aiopti__sgd__default_8h.html" title="Default implementation of the Stochastic Gradient Descend optimizer .">aiopti_sgd_default.h</a>) or set the required math functions on your own.</p>
 <p>The Stochastic Gradient Descent (SGD) optimizer is the most basic optimizer in backpropagation. It uses the pre-calculated gradients to optimize the given parameters. In addition, a momentum term can be configured.<br  />
 For every parameter \( p \) of the parameters to optimize (trainable parameters) and the related gradient \( g \) it calculates </p><p class="formulaDsp">
@@ -315,8 +318,8 @@ This function is not intended to call it directly. Instead use one of the data t
 
 </div>
 </div>
-<a id="a0df309c94d9309f2bd8b3669782e9ec0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0df309c94d9309f2bd8b3669782e9ec0">&#9670;&nbsp;</a></span>aiopti_sgd_print_specs()</h2>
+<a id="a935e38eb3fc504e1c63406b48ad404cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a935e38eb3fc504e1c63406b48ad404cd">&#9670;&nbsp;</a></span>aiopti_sgd_print_specs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -325,18 +328,8 @@ This function is not intended to call it directly. Instead use one of the data t
           <td class="memname">void aiopti_sgd_print_specs </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structaiopti.html">aiopti_t</a> *&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>self</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int(*)(const char *format,...)&#160;</td>
-          <td class="paramname"><em>print</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -345,7 +338,6 @@ This function is not intended to call it directly. Instead use one of the data t
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">*self</td><td>The optimizer to print the specification for </td></tr>
-    <tr><td class="paramname">*print</td><td>Pointer to the print function to use </td></tr>
   </table>
   </dd>
 </dl>
@@ -382,7 +374,7 @@ This function is not intended to call it directly. Instead use one of the data t
 <p><em>Implementation of <a class="el" href="structaiopti.html#a948b4e86692cb9306c71c1099a6ba67d" title="Calculates the optimization memory size for a trainable parameter tensor.">aiopti.sizeof_optimem</a>.</em></p>
 <p>Calculates the size of the memory space that must be reserved. The memory is used for the velocity tensor (momentum term) and is calculated by:</p>
 <div class="fragment"><div class="line"><span class="keyword">sizeof</span>(<a class="code" href="structaitensor.html">aitensor</a>) + <span class="keyword">sizeof</span>(params.data) </div>
-<div class="ttc" id="astructaitensor_html"><div class="ttname"><a href="structaitensor.html">aitensor</a></div><div class="ttdoc">A tensor in AIfES.</div><div class="ttdef"><b>Definition:</b> aifes_math.h:98</div></div>
+<div class="ttc" id="astructaitensor_html"><div class="ttname"><a href="structaitensor.html">aitensor</a></div><div class="ttdoc">A tensor in AIfES.</div><div class="ttdef"><b>Definition:</b> aifes_math.h:89</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">*self</td><td>The optimizer </td></tr>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AIfES 2: D:/Projekte/AIfES_GitRepos/aifes_int/include/basic/cmsis/ailayer/ailayer_dense_cmsis.h File Reference</title>
+<title>AIfES 2: /builds/ims-esa/aifes_2/include/basic/cmsis/ailayer/ailayer_dense_cmsis.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,15 +107,21 @@ Functions</h2></td></tr>
 <tr class="memitem:ae4d838f2bde7df2c469aac4ac6a15a46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structailayer.html">ailayer_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ailayer__dense__cmsis_8h.html#ae4d838f2bde7df2c469aac4ac6a15a46">ailayer_dense_f32_cmsis</a> (<a class="el" href="structailayer__dense.html">ailayer_dense_t</a> *layer, <a class="el" href="structailayer.html">ailayer_t</a> *input_layer)</td></tr>
 <tr class="memdesc:ae4d838f2bde7df2c469aac4ac6a15a46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes and connect a Dense layer with the <a class="el" href="aimath__f32_8h.html">F32 </a> CMSIS implementation.  <a href="ailayer__dense__cmsis_8h.html#ae4d838f2bde7df2c469aac4ac6a15a46">More...</a><br /></td></tr>
 <tr class="separator:ae4d838f2bde7df2c469aac4ac6a15a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ced6d503f0f851d90050b344f47c638"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structailayer.html">ailayer_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ailayer__dense__cmsis_8h.html#a4ced6d503f0f851d90050b344f47c638">ailayer_dense_wt_q7_cmsis</a> (<a class="el" href="structailayer__dense.html">ailayer_dense_t</a> *layer, <a class="el" href="structailayer.html">ailayer_t</a> *input_layer)</td></tr>
+<tr class="memdesc:a4ced6d503f0f851d90050b344f47c638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes and connect a <a class="el" href="ailayer__dense_8h.html">Dense layer </a> with the <a class="el" href="aimath__q7_8h.html">Q7 </a> AMR CMSIS implementation for transposed weights tensor.  <a href="ailayer__dense__cmsis_8h.html#a4ced6d503f0f851d90050b344f47c638">More...</a><br /></td></tr>
+<tr class="separator:a4ced6d503f0f851d90050b344f47c638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a href="https://developer.arm.com/tools-and-software/embedded/cmsis">Arm CMSIS</a> implementation of the <a class="el" href="ailayer__dense_8h.html">Dense layer </a> for Arm Cortex processors. </p>
 <dl class="section version"><dt>Version</dt><dd>2.0alpha </dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (C) 2020-2021 Fraunhofer Institute for Microelectronic Circuits and Systems. All rights reserved.</dd></dl>
-<p>AIfES is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
-<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
-<p>You should have received a copy of the GNU General Public License along with this program. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</p>
-<p>Arm CMSIS implementations of the Dense layer in <a class="el" href="aimath__f32_8h.html">F32 </a> data-type. These implementations are specifically designed for the Arm Cortex processors and take advantage of SIMD instructions. For more information about the Dense layer refer to <a class="el" href="ailayer__dense_8h.html" title="Base layer  implementation of the Dense layer.">ailayer_dense.h</a>. </p>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (C) 2020-2021 Fraunhofer Institute for Microelectronic Circuits and Systems. All rights reserved.<br  />
+<br  />
+ AIfES is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.<br  />
+<br  />
+ This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.<br  />
+<br  />
+ You should have received a copy of the GNU Affero General Public License along with this program. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</dd></dl>
+<p>Arm CMSIS implementations of the Dense layer in <a class="el" href="aimath__f32_8h.html">F32 </a>, <a class="el" href="aimath__q31_8h.html">Q31 </a> and <a class="el" href="aimath__q7_8h.html">Q7 </a> data-type. These implementations are specifically designed for the Arm Cortex processors and take advantage of SIMD instructions. For more information about the Dense layer refer to <a class="el" href="ailayer__dense_8h.html" title="Base layer  implementation of the Dense layer.">ailayer_dense.h</a>. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ae4d838f2bde7df2c469aac4ac6a15a46"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae4d838f2bde7df2c469aac4ac6a15a46">&#9670;&nbsp;</a></span>ailayer_dense_f32_cmsis()</h2>
@@ -153,8 +159,8 @@ Functions</h2></td></tr>
 <div class="line">    .weights.data = (<span class="keywordtype">float</span> *) weights_data_dense,</div>
 <div class="line">    .bias.data = (<span class="keywordtype">float</span> *) bias_data_dense</div>
 <div class="line">};</div>
-<div class="ttc" id="astructailayer__dense_html"><div class="ttname"><a href="structailayer__dense.html">ailayer_dense</a></div><div class="ttdoc">General Dense layer  structure.</div><div class="ttdef"><b>Definition:</b> ailayer_dense.h:72</div></div>
-<div class="ttc" id="astructailayer__dense_html_aa7ae0d08cc0a75b22e656b9e2e3c336b"><div class="ttname"><a href="structailayer__dense.html#aa7ae0d08cc0a75b22e656b9e2e3c336b">ailayer_dense::neurons</a></div><div class="ttdeci">uint32_t neurons</div><div class="ttdoc">Layer neurons count (number of outputs).</div><div class="ttdef"><b>Definition:</b> ailayer_dense.h:82</div></div>
+<div class="ttc" id="astructailayer__dense_html"><div class="ttname"><a href="structailayer__dense.html">ailayer_dense</a></div><div class="ttdoc">General Dense layer  structure.</div><div class="ttdef"><b>Definition:</b> ailayer_dense.h:71</div></div>
+<div class="ttc" id="astructailayer__dense_html_aa7ae0d08cc0a75b22e656b9e2e3c336b"><div class="ttname"><a href="structailayer__dense.html#aa7ae0d08cc0a75b22e656b9e2e3c336b">ailayer_dense::neurons</a></div><div class="ttdeci">uint32_t neurons</div><div class="ttdoc">Layer neurons count (number of outputs).</div><div class="ttdef"><b>Definition:</b> ailayer_dense.h:81</div></div>
 </div><!-- fragment --><p>Example: Create the layer structure for training:<br  />
 </p><div class="fragment"><div class="line"><a class="code" href="structailayer__dense.html">ailayer_dense_f32_t</a> dense_layer = {</div>
 <div class="line">    .<a class="code" href="structailayer__dense.html#aa7ae0d08cc0a75b22e656b9e2e3c336b">neurons</a> = 3</div>
@@ -162,6 +168,92 @@ Functions</h2></td></tr>
 </div><!-- fragment --><p>Example: Initialize and connect the layer:<br  />
 </p><div class="fragment"><div class="line">x = <a class="code" href="ailayer__dense__cmsis_8h.html#ae4d838f2bde7df2c469aac4ac6a15a46">ailayer_dense_f32_cmsis</a>(&amp;dense_layer, x);</div>
 <div class="ttc" id="aailayer__dense__cmsis_8h_html_ae4d838f2bde7df2c469aac4ac6a15a46"><div class="ttname"><a href="ailayer__dense__cmsis_8h.html#ae4d838f2bde7df2c469aac4ac6a15a46">ailayer_dense_f32_cmsis</a></div><div class="ttdeci">ailayer_t * ailayer_dense_f32_cmsis(ailayer_dense_t *layer, ailayer_t *input_layer)</div><div class="ttdoc">Initializes and connect a Dense layer with the F32  CMSIS implementation.</div></div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*layer</td><td>The layer structure to initialize. </td></tr>
+    <tr><td class="paramname">*input_layer</td><td>The prior layer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The (successfully) initialized layer structure. </dd></dl>
+
+</div>
+</div>
+<a id="a4ced6d503f0f851d90050b344f47c638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ced6d503f0f851d90050b344f47c638">&#9670;&nbsp;</a></span>ailayer_dense_wt_q7_cmsis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structailayer.html">ailayer_t</a>* ailayer_dense_wt_q7_cmsis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structailayer__dense.html">ailayer_dense_t</a> *&#160;</td>
+          <td class="paramname"><em>layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structailayer.html">ailayer_t</a> *&#160;</td>
+          <td class="paramname"><em>input_layer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes and connect a <a class="el" href="ailayer__dense_8h.html">Dense layer </a> with the <a class="el" href="aimath__q7_8h.html">Q7 </a> AMR CMSIS implementation for transposed weights tensor. </p>
+<p>The weights tensor has to be transposed for this implementation, like in <a class="el" href="ailayer__dense__default_8h.html#acd55d4485ba046577ccbb0a2f314ae34" title="Initializes and connect a Dense layer  with the Q7  default implementation for transposed weights ten...">ailayer_dense_wt_q7_default()</a>.</p>
+<p><b>Example:</b> Create the layer structure with pretrained weights:<br  />
+In C: </p><div class="fragment"><div class="line"><span class="comment">// Use constant data only for inference. For training remove the const qualifier!!</span></div>
+<div class="line"><span class="comment">// Weights (8 bit quantized)</span></div>
+<div class="line"><span class="keyword">const</span> <a class="code" href="structaimath__q7__params.html">aimath_q7_params_t</a> weights_q_params_dense = { .<a class="code" href="structaimath__q7__params.html#a8f20d77488fe485aaf9ea8e9c5d7d35e">shift</a> = 3, .zero_point = 0 };</div>
+<div class="line"><span class="keyword">const</span> int8_t weights_data_dense[] = {-81, 58, -67, -61, 44, -72};</div>
+<div class="line"><span class="comment">// Bias (32 bit quantized)</span></div>
+<div class="line"><span class="keyword">const</span> <a class="code" href="structaimath__q31__params.html">aimath_q31_params_t</a> bias_q_params_dense = { .<a class="code" href="structaimath__q31__params.html#a8f20d77488fe485aaf9ea8e9c5d7d35e">shift</a> = 10, .zero_point = 0 };</div>
+<div class="line"><span class="keyword">const</span> int32_t bias_data_dense[] = {-3036,  2425, -1635};</div>
+<div class="line"><span class="comment">// Result (8 bit quantized)</span></div>
+<div class="line"><span class="keyword">const</span> <a class="code" href="structaimath__q7__params.html">aimath_q7_params_t</a> result_q_params_dense = { .<a class="code" href="structaimath__q7__params.html#a8f20d77488fe485aaf9ea8e9c5d7d35e">shift</a> = 3, .zero_point = 41 };</div>
+<div class="line"><a class="code" href="structailayer__dense.html">ailayer_dense_q7_t</a> dense_layer = {</div>
+<div class="line">    .<a class="code" href="structailayer__dense.html#aa7ae0d08cc0a75b22e656b9e2e3c336b">neurons</a> = 3,</div>
+<div class="line">    .weights = {</div>
+<div class="line">        .tensor_params = (<a class="code" href="structaimath__q7__params.html">aimath_q7_params_t</a> *) &amp;weights_q_params_dense,</div>
+<div class="line">        .data = (int8_t *) weights_data_dense</div>
+<div class="line">    },</div>
+<div class="line">    .bias = {</div>
+<div class="line">        .tensor_params = (<a class="code" href="structaimath__q31__params.html">aimath_q31_params_t</a> *) &amp;bias_q_params_dense,</div>
+<div class="line">        .data = (int32_t *) bias_data_dense</div>
+<div class="line">    },</div>
+<div class="line">    .base.result.tensor_params = (<a class="code" href="structaimath__q7__params.html">aimath_q7_params_t</a> *) &amp;result_q_params_dense</div>
+<div class="line">};</div>
+<div class="ttc" id="astructaimath__q31__params_html"><div class="ttname"><a href="structaimath__q31__params.html">aimath_q31_params</a></div><div class="ttdoc">Parameters used for the quantized Q31  values, used as property of a tensor.</div><div class="ttdef"><b>Definition:</b> aimath_q31.h:149</div></div>
+<div class="ttc" id="astructaimath__q31__params_html_a8f20d77488fe485aaf9ea8e9c5d7d35e"><div class="ttname"><a href="structaimath__q31__params.html#a8f20d77488fe485aaf9ea8e9c5d7d35e">aimath_q31_params::shift</a></div><div class="ttdeci">uint16_t shift</div><div class="ttdoc">The scaling factor  of the quantization (The total scale is calculated with )</div><div class="ttdef"><b>Definition:</b> aimath_q31.h:150</div></div>
+<div class="ttc" id="astructaimath__q7__params_html"><div class="ttname"><a href="structaimath__q7__params.html">aimath_q7_params</a></div><div class="ttdoc">Parameters used for the quantized Q7  values, used as property of a tensor.</div><div class="ttdef"><b>Definition:</b> aimath_q7.h:148</div></div>
+<div class="ttc" id="astructaimath__q7__params_html_a8f20d77488fe485aaf9ea8e9c5d7d35e"><div class="ttname"><a href="structaimath__q7__params.html#a8f20d77488fe485aaf9ea8e9c5d7d35e">aimath_q7_params::shift</a></div><div class="ttdeci">uint16_t shift</div><div class="ttdoc">The scaling factor  of the quantization (The total scale is calculated with )</div><div class="ttdef"><b>Definition:</b> aimath_q7.h:149</div></div>
+</div><!-- fragment --><p> In C, C++ and on Arduino: </p><div class="fragment"><div class="line"><span class="comment">// Use constant data only for inference. For training remove the const qualifier!!</span></div>
+<div class="line"><span class="comment">// Weights (8 bit quantized)</span></div>
+<div class="line"><span class="keyword">const</span> <a class="code" href="structaimath__q7__params.html">aimath_q7_params_t</a> weights_q_params_dense = { .<a class="code" href="structaimath__q7__params.html#a8f20d77488fe485aaf9ea8e9c5d7d35e">shift</a> = 3, .zero_point = 0 };</div>
+<div class="line"><span class="keyword">const</span> int8_t weights_data_dense[] = {-81, 58, -67, -61, 44, -72};</div>
+<div class="line"><span class="comment">// Bias (32 bit quantized)</span></div>
+<div class="line"><span class="keyword">const</span> <a class="code" href="structaimath__q31__params.html">aimath_q31_params_t</a> bias_q_params_dense = { .<a class="code" href="structaimath__q31__params.html#a8f20d77488fe485aaf9ea8e9c5d7d35e">shift</a> = 10, .zero_point = 0 };</div>
+<div class="line"><span class="keyword">const</span> int32_t bias_data_dense[] = {-3036,  2425, -1635};</div>
+<div class="line"><span class="comment">// Result (8 bit quantized)</span></div>
+<div class="line"><span class="keyword">const</span> <a class="code" href="structaimath__q7__params.html">aimath_q7_params_t</a> result_q_params_dense = { .<a class="code" href="structaimath__q7__params.html#a8f20d77488fe485aaf9ea8e9c5d7d35e">shift</a> = 3, .zero_point = 41 };</div>
+<div class="line"><a class="code" href="structailayer__dense.html">ailayer_dense_q7_t</a> dense_layer = AILAYER_DENSE_Q7_M(3,</div>
+<div class="line">                                                    weights_data_dense, &amp;weights_q_params_dense,</div>
+<div class="line">                                                    bias_data_dense, &amp;bias_q_params_dense,</div>
+<div class="line">                                                    &amp;result_q_params_dense);</div>
+</div><!-- fragment --><p><b>Example:</b> Create the layer structure for automatic parameter distribution:<br  />
+In C: </p><div class="fragment"><div class="line"><a class="code" href="structailayer__dense.html">ailayer_dense_q7_t</a> dense_layer = {</div>
+<div class="line">    .<a class="code" href="structailayer__dense.html#aa7ae0d08cc0a75b22e656b9e2e3c336b">neurons</a> = 3</div>
+<div class="line">};</div>
+</div><!-- fragment --><p> In C, C++ and on Arduino: </p><div class="fragment"><div class="line"><a class="code" href="structailayer__dense.html">ailayer_dense_q7_t</a> dense_layer = AILAYER_DENSE_Q7_A(3);</div>
+</div><!-- fragment --><p><b>Example:</b> Initialize and connect the layer:<br  />
+</p><div class="fragment"><div class="line">x = <a class="code" href="ailayer__dense__cmsis_8h.html#a4ced6d503f0f851d90050b344f47c638">ailayer_dense_wt_q7_cmsis</a>(&amp;dense_layer, x);</div>
+<div class="ttc" id="aailayer__dense__cmsis_8h_html_a4ced6d503f0f851d90050b344f47c638"><div class="ttname"><a href="ailayer__dense__cmsis_8h.html#a4ced6d503f0f851d90050b344f47c638">ailayer_dense_wt_q7_cmsis</a></div><div class="ttdeci">ailayer_t * ailayer_dense_wt_q7_cmsis(ailayer_dense_t *layer, ailayer_t *input_layer)</div><div class="ttdoc">Initializes and connect a Dense layer  with the Q7  AMR CMSIS implementation for transposed weights t...</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">*layer</td><td>The layer structure to initialize. </td></tr>

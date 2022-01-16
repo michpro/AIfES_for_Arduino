@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AIfES 2: D:/Projekte/AIfES_GitRepos/aifes_int/include/basic/cmsis/aimath/aimath_f32_cmsis.h Source File</title>
+<title>AIfES 2: /builds/ims-esa/aifes_2/include/basic/cmsis/aimath/aimath_f32_cmsis.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,27 +95,29 @@ $(document).ready(function(){initNavTree('aimath__f32__cmsis_8h_source.html','')
 </div><!--header-->
 <div class="contents">
 <a href="aimath__f32__cmsis_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifndef AIMATH_F32_CMSIS</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define AIMATH_F32_CMSIS</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;aifes_config.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#if __arm__</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifdef AIFES_WITH_CMSIS</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="aimath__f32_8h.html">basic/base/aimath/aimath_f32.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef AIMATH_F32_CMSIS</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define AIMATH_F32_CMSIS</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#if __arm__</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifdef AIFES_WITH_CMSIS</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="aimath__f32_8h.html">basic/base/aimath/aimath_f32.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="aimath__f32__cmsis_8h.html#a38af60477fad26350bbb970a51966bf1">  112</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="aimath__f32__cmsis_8h.html#a38af60477fad26350bbb970a51966bf1">aimath_f32_cmsis_linear</a>(<span class="keyword">const</span> <a class="code" href="structaitensor.html">aitensor_t</a> *a, <span class="keyword">const</span> <a class="code" href="structaitensor.html">aitensor_t</a> *b, <span class="keyword">const</span> <a class="code" href="structaitensor.html">aitensor_t</a> *c, <a class="code" href="structaitensor.html">aitensor_t</a> *result);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="aimath__f32__cmsis_8h.html#a14e97c2b77f067708008323e9a04aecf">  125</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="aimath__f32__cmsis_8h.html#a14e97c2b77f067708008323e9a04aecf">aimath_f32_cmsis_mat_mul</a>(<span class="keyword">const</span> <a class="code" href="structaitensor.html">aitensor_t</a> *a, <span class="keyword">const</span> <a class="code" href="structaitensor.html">aitensor_t</a> *b, <a class="code" href="structaitensor.html">aitensor_t</a> *result);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// AIFES_WITH_CMSIS</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//__arm__</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// AIMATH_F32_CMSIS</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="aimath__f32__cmsis_8h.html#a38af60477fad26350bbb970a51966bf1">  111</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="aimath__f32__cmsis_8h.html#a38af60477fad26350bbb970a51966bf1">aimath_f32_cmsis_linear</a>(<span class="keyword">const</span> <a class="code" href="structaitensor.html">aitensor_t</a> *a, <span class="keyword">const</span> <a class="code" href="structaitensor.html">aitensor_t</a> *b, <span class="keyword">const</span> <a class="code" href="structaitensor.html">aitensor_t</a> *c, <a class="code" href="structaitensor.html">aitensor_t</a> *result);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="aimath__f32__cmsis_8h.html#a14e97c2b77f067708008323e9a04aecf">  124</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="aimath__f32__cmsis_8h.html#a14e97c2b77f067708008323e9a04aecf">aimath_f32_cmsis_mat_mul</a>(<span class="keyword">const</span> <a class="code" href="structaitensor.html">aitensor_t</a> *a, <span class="keyword">const</span> <a class="code" href="structaitensor.html">aitensor_t</a> *b, <a class="code" href="structaitensor.html">aitensor_t</a> *result);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// AIMATH_F32_CMSIS</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// AIFES_WITH_CMSIS</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//__arm__</span></div>
 <div class="ttc" id="aaimath__f32_8h_html"><div class="ttname"><a href="aimath__f32_8h.html">aimath_f32.h</a></div><div class="ttdoc">Definition of the F32 (aif32) data-type.</div></div>
 <div class="ttc" id="aaimath__f32__cmsis_8h_html_a14e97c2b77f067708008323e9a04aecf"><div class="ttname"><a href="aimath__f32__cmsis_8h.html#a14e97c2b77f067708008323e9a04aecf">aimath_f32_cmsis_mat_mul</a></div><div class="ttdeci">void aimath_f32_cmsis_mat_mul(const aitensor_t *a, const aitensor_t *b, aitensor_t *result)</div><div class="ttdoc">Performs a matrix multiplication of f32 tensors a and b, using the ARM CMSIS DSP.</div></div>
 <div class="ttc" id="aaimath__f32__cmsis_8h_html_a38af60477fad26350bbb970a51966bf1"><div class="ttname"><a href="aimath__f32__cmsis_8h.html#a38af60477fad26350bbb970a51966bf1">aimath_f32_cmsis_linear</a></div><div class="ttdeci">void aimath_f32_cmsis_linear(const aitensor_t *a, const aitensor_t *b, const aitensor_t *c, aitensor_t *result)</div><div class="ttdoc">Performs a matrix multiplication of f32 tensors a and b and adds a 1D tensor c to each row,...</div></div>
-<div class="ttc" id="astructaitensor_html"><div class="ttname"><a href="structaitensor.html">aitensor</a></div><div class="ttdoc">A tensor in AIfES.</div><div class="ttdef"><b>Definition:</b> aifes_math.h:98</div></div>
+<div class="ttc" id="astructaitensor_html"><div class="ttname"><a href="structaitensor.html">aitensor</a></div><div class="ttdoc">A tensor in AIfES.</div><div class="ttdef"><b>Definition:</b> aifes_math.h:89</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

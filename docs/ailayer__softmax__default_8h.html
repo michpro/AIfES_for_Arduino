@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AIfES 2: D:/Projekte/AIfES_GitRepos/aifes_int/include/basic/default/ailayer/ailayer_softmax_default.h File Reference</title>
+<title>AIfES 2: /builds/ims-esa/aifes_2/include/basic/default/ailayer/ailayer_softmax_default.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,22 +108,99 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a69e8b2dfeb3385e3268344f8089b3bd7"><td class="memItemLeft" align="right" valign="top"><a id="a69e8b2dfeb3385e3268344f8089b3bd7"></a>
 typedef struct <a class="el" href="structailayer__softmax.html">ailayer_softmax</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ailayer_softmax_f32_t</b></td></tr>
 <tr class="separator:a69e8b2dfeb3385e3268344f8089b3bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea73c1b35eebebdc7c865e81d9ff462a"><td class="memItemLeft" align="right" valign="top"><a id="aea73c1b35eebebdc7c865e81d9ff462a"></a>
+typedef struct <a class="el" href="structailayer__softmax.html">ailayer_softmax</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ailayer_softmax_q31_t</b></td></tr>
+<tr class="separator:aea73c1b35eebebdc7c865e81d9ff462a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa142629de588623499e874d58f249727"><td class="memItemLeft" align="right" valign="top"><a id="aa142629de588623499e874d58f249727"></a>
+typedef struct <a class="el" href="structailayer__softmax.html">ailayer_softmax</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ailayer_softmax_q7_t</b></td></tr>
+<tr class="separator:aa142629de588623499e874d58f249727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3a89bb8691ee208550e0b267355679ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structailayer.html">ailayer_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ailayer__softmax__default_8h.html#a3a89bb8691ee208550e0b267355679ea">ailayer_softmax_f32_default</a> (<a class="el" href="structailayer__softmax.html">ailayer_softmax_f32_t</a> *layer, <a class="el" href="structailayer.html">ailayer_t</a> *input_layer)</td></tr>
 <tr class="memdesc:a3a89bb8691ee208550e0b267355679ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes and connect an <a class="el" href="ailayer__softmax_8h.html">Softmax layer </a> with the <a class="el" href="aimath__f32_8h.html">F32 </a> default implementation.  <a href="ailayer__softmax__default_8h.html#a3a89bb8691ee208550e0b267355679ea">More...</a><br /></td></tr>
 <tr class="separator:a3a89bb8691ee208550e0b267355679ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabdf9e2b722406165c4e28a0c8c29a18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structailayer.html">ailayer_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ailayer__softmax__default_8h.html#aabdf9e2b722406165c4e28a0c8c29a18">ailayer_softmax_q31_default</a> (<a class="el" href="structailayer__softmax.html">ailayer_softmax_q31_t</a> *layer, <a class="el" href="structailayer.html">ailayer_t</a> *input_layer)</td></tr>
+<tr class="memdesc:aabdf9e2b722406165c4e28a0c8c29a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes and connects an <a class="el" href="ailayer__softmax_8h.html">Softmax layer </a> with the <a class="el" href="aimath__q31_8h.html">Q31 </a> default implementation.  <a href="ailayer__softmax__default_8h.html#aabdf9e2b722406165c4e28a0c8c29a18">More...</a><br /></td></tr>
+<tr class="separator:aabdf9e2b722406165c4e28a0c8c29a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469403b690f21b4025bd5443bf6af11d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structailayer.html">ailayer_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ailayer__softmax__default_8h.html#a469403b690f21b4025bd5443bf6af11d">ailayer_softmax_q7_default</a> (<a class="el" href="structailayer__softmax.html">ailayer_softmax_q7_t</a> *layer, <a class="el" href="structailayer.html">ailayer_t</a> *input_layer)</td></tr>
+<tr class="memdesc:a469403b690f21b4025bd5443bf6af11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes and connects an <a class="el" href="ailayer__softmax_8h.html">Softmax layer </a> with the <a class="el" href="aimath__q7_8h.html">Q7 </a> default implementation.  <a href="ailayer__softmax__default_8h.html#a469403b690f21b4025bd5443bf6af11d">More...</a><br /></td></tr>
+<tr class="separator:a469403b690f21b4025bd5443bf6af11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8037b9cd851dd10f715f113107ad8c6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ailayer__softmax__default_8h.html#a8037b9cd851dd10f715f113107ad8c6b">ailayer_softmax_calc_result_tensor_params_q31_default</a> (<a class="el" href="structailayer.html">ailayer_t</a> *self)</td></tr>
+<tr class="memdesc:a8037b9cd851dd10f715f113107ad8c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate and set the quantization parameters for the result tensor of the softmax <a class="el" href="aimath__q31_8h.html">Q31 </a> default implementation.  <a href="ailayer__softmax__default_8h.html#a8037b9cd851dd10f715f113107ad8c6b">More...</a><br /></td></tr>
+<tr class="separator:a8037b9cd851dd10f715f113107ad8c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc1623eb58ecc09009b80f3843a972eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ailayer__softmax__default_8h.html#abc1623eb58ecc09009b80f3843a972eb">ailayer_softmax_calc_result_tensor_params_q7_default</a> (<a class="el" href="structailayer.html">ailayer_t</a> *self)</td></tr>
+<tr class="memdesc:abc1623eb58ecc09009b80f3843a972eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate and set the quantization parameters for the result tensor of the softmax <a class="el" href="aimath__q7_8h.html">Q7 </a> default implementation.  <a href="ailayer__softmax__default_8h.html#abc1623eb58ecc09009b80f3843a972eb">More...</a><br /></td></tr>
+<tr class="separator:abc1623eb58ecc09009b80f3843a972eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Default implementation of the <a class="el" href="ailayer__softmax_8h.html">Softmax layer </a>. </p>
 <dl class="section version"><dt>Version</dt><dd>2.0alpha </dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (C) 2020-2021 Fraunhofer Institute for Microelectronic Circuits and Systems. All rights reserved.</dd></dl>
-<p>AIfES is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
-<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
-<p>You should have received a copy of the GNU General Public License along with this program. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</p>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (C) 2020-2021 Fraunhofer Institute for Microelectronic Circuits and Systems. All rights reserved.<br  />
+<br  />
+ AIfES is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.<br  />
+<br  />
+ This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.<br  />
+<br  />
+ You should have received a copy of the GNU Affero General Public License along with this program. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</dd></dl>
 <p>Hardware independent implementations of the Softmax layer in <a class="el" href="aimath__f32_8h.html">F32 </a> data-type. For more information about the Softmax layer refer to <a class="el" href="ailayer__softmax_8h.html" title="Base layer  implementation of the Softmax activation layer.">ailayer_softmax.h</a>. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a8037b9cd851dd10f715f113107ad8c6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8037b9cd851dd10f715f113107ad8c6b">&#9670;&nbsp;</a></span>ailayer_softmax_calc_result_tensor_params_q31_default()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ailayer_softmax_calc_result_tensor_params_q31_default </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structailayer.html">ailayer_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate and set the quantization parameters for the result tensor of the softmax <a class="el" href="aimath__q31_8h.html">Q31 </a> default implementation. </p>
+<p><em>Implementation of <a class="el" href="structailayer.html#ab5e8fd65efe85a1ee1ac9147594ddd61" title="If available, calculate and set the tensor_params of the result tensor.">ailayer.calc_result_tensor_params</a>.</em></p>
+<p>The quantization parameters are pre-defined and the same as in the corresponding math function <a class="el" href="aimath__q31__default_8h.html#aa79d9561f6461efaf6bd01590d38ae98" title="Calculates the softmax value of each batch element (row) of a Q31  tensor.">aimath_q31_default_softmax()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*self</td><td>The layer structure </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abc1623eb58ecc09009b80f3843a972eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc1623eb58ecc09009b80f3843a972eb">&#9670;&nbsp;</a></span>ailayer_softmax_calc_result_tensor_params_q7_default()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ailayer_softmax_calc_result_tensor_params_q7_default </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structailayer.html">ailayer_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate and set the quantization parameters for the result tensor of the softmax <a class="el" href="aimath__q7_8h.html">Q7 </a> default implementation. </p>
+<p><em>Implementation of <a class="el" href="structailayer.html#ab5e8fd65efe85a1ee1ac9147594ddd61" title="If available, calculate and set the tensor_params of the result tensor.">ailayer.calc_result_tensor_params</a>.</em></p>
+<p>The quantization parameters are pre-defined and the same as in the corresponding math function <a class="el" href="aimath__q7__default_8h.html#a9a397ffb85d001e9d99c904369e8c7f4" title="Calculates the softmax value of each batch element (row) of a Q7  tensor.">aimath_q7_default_softmax()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*self</td><td>The layer structure </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a3a89bb8691ee208550e0b267355679ea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a89bb8691ee208550e0b267355679ea">&#9670;&nbsp;</a></span>ailayer_softmax_f32_default()</h2>
 
@@ -151,12 +228,103 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes and connect an <a class="el" href="ailayer__softmax_8h.html">Softmax layer </a> with the <a class="el" href="aimath__f32_8h.html">F32 </a> default implementation. </p>
-<p>Example: Create the layer structure:<br  />
+<p><b>Example:</b> Create the layer structure:<br  />
 </p><div class="fragment"><div class="line"><a class="code" href="structailayer__softmax.html">ailayer_softmax_f32_t</a> softmax_layer;</div>
-<div class="ttc" id="astructailayer__softmax_html"><div class="ttname"><a href="structailayer__softmax.html">ailayer_softmax</a></div><div class="ttdoc">General Softmax layer  struct.</div><div class="ttdef"><b>Definition:</b> ailayer_softmax.h:54</div></div>
-</div><!-- fragment --><p>Example: Initialize and connect the layer:<br  />
+<div class="ttc" id="astructailayer__softmax_html"><div class="ttname"><a href="structailayer__softmax.html">ailayer_softmax</a></div><div class="ttdoc">General Softmax layer  struct.</div><div class="ttdef"><b>Definition:</b> ailayer_softmax.h:51</div></div>
+</div><!-- fragment --><p> or </p><div class="fragment"><div class="line"><a class="code" href="structailayer__softmax.html">ailayer_softmax_f32_t</a> softmax_layer = AILAYER_SOFTMAX_F32_A();</div>
+</div><!-- fragment --><p><b>Example:</b> Initialize and connect the layer:<br  />
 </p><div class="fragment"><div class="line">x = <a class="code" href="ailayer__softmax__default_8h.html#a3a89bb8691ee208550e0b267355679ea">ailayer_softmax_f32_default</a>(&amp;softmax_layer, x);</div>
 <div class="ttc" id="aailayer__softmax__default_8h_html_a3a89bb8691ee208550e0b267355679ea"><div class="ttname"><a href="ailayer__softmax__default_8h.html#a3a89bb8691ee208550e0b267355679ea">ailayer_softmax_f32_default</a></div><div class="ttdeci">ailayer_t * ailayer_softmax_f32_default(ailayer_softmax_f32_t *layer, ailayer_t *input_layer)</div><div class="ttdoc">Initializes and connect an Softmax layer  with the F32  default implementation.</div></div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*layer</td><td>The layer structure to initialize. </td></tr>
+    <tr><td class="paramname">*input_layer</td><td>The prior layer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The (successfully) initialized layer structure. </dd></dl>
+
+</div>
+</div>
+<a id="aabdf9e2b722406165c4e28a0c8c29a18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabdf9e2b722406165c4e28a0c8c29a18">&#9670;&nbsp;</a></span>ailayer_softmax_q31_default()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structailayer.html">ailayer_t</a>* ailayer_softmax_q31_default </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structailayer__softmax.html">ailayer_softmax_q31_t</a> *&#160;</td>
+          <td class="paramname"><em>layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structailayer.html">ailayer_t</a> *&#160;</td>
+          <td class="paramname"><em>input_layer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes and connects an <a class="el" href="ailayer__softmax_8h.html">Softmax layer </a> with the <a class="el" href="aimath__q31_8h.html">Q31 </a> default implementation. </p>
+<p><b>The quantization parameters of the result tensor are automatically set to {shift = 32, zero_point = -2^31} because the output values are in the interval (0, 1).</b></p>
+<p><b>Example:</b> Create the layer structure:<br  />
+</p><div class="fragment"><div class="line"><a class="code" href="structailayer__softmax.html">ailayer_softmax_q31_t</a> softmax_layer;</div>
+</div><!-- fragment --><p> or </p><div class="fragment"><div class="line"><a class="code" href="structailayer__softmax.html">ailayer_softmax_q31_t</a> softmax_layer = AILAYER_SOFTMAX_Q31_M();</div>
+</div><!-- fragment --><p><b>Example:</b> Initialize and connect the layer:<br  />
+</p><div class="fragment"><div class="line">x = <a class="code" href="ailayer__softmax__default_8h.html#aabdf9e2b722406165c4e28a0c8c29a18">ailayer_softmax_q31_default</a>(&amp;softmax_layer, x);</div>
+<div class="ttc" id="aailayer__softmax__default_8h_html_aabdf9e2b722406165c4e28a0c8c29a18"><div class="ttname"><a href="ailayer__softmax__default_8h.html#aabdf9e2b722406165c4e28a0c8c29a18">ailayer_softmax_q31_default</a></div><div class="ttdeci">ailayer_t * ailayer_softmax_q31_default(ailayer_softmax_q31_t *layer, ailayer_t *input_layer)</div><div class="ttdoc">Initializes and connects an Softmax layer  with the Q31  default implementation.</div></div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*layer</td><td>The layer structure to initialize. </td></tr>
+    <tr><td class="paramname">*input_layer</td><td>The prior layer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The (successfully) initialized layer structure. </dd></dl>
+
+</div>
+</div>
+<a id="a469403b690f21b4025bd5443bf6af11d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a469403b690f21b4025bd5443bf6af11d">&#9670;&nbsp;</a></span>ailayer_softmax_q7_default()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structailayer.html">ailayer_t</a>* ailayer_softmax_q7_default </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structailayer__softmax.html">ailayer_softmax_q7_t</a> *&#160;</td>
+          <td class="paramname"><em>layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structailayer.html">ailayer_t</a> *&#160;</td>
+          <td class="paramname"><em>input_layer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes and connects an <a class="el" href="ailayer__softmax_8h.html">Softmax layer </a> with the <a class="el" href="aimath__q7_8h.html">Q7 </a> default implementation. </p>
+<p><b>The quantization parameters of the result tensor are automatically set to {shift = 8, zero_point = -2^7} because the output values are in the interval (0, 1).</b></p>
+<p><b>Example:</b> Create the layer structure:<br  />
+</p><div class="fragment"><div class="line"><a class="code" href="structailayer__softmax.html">ailayer_softmax_q7_t</a> softmax_layer;</div>
+</div><!-- fragment --><p> or </p><div class="fragment"><div class="line"><a class="code" href="structailayer__softmax.html">ailayer_softmax_q7_t</a> softmax_layer = AILAYER_SOFTMAX_Q7_M();</div>
+</div><!-- fragment --><p><b>Example:</b> Initialize and connect the layer:<br  />
+</p><div class="fragment"><div class="line">x = <a class="code" href="ailayer__softmax__default_8h.html#a469403b690f21b4025bd5443bf6af11d">ailayer_softmax_q7_default</a>(&amp;softmax_layer, x);</div>
+<div class="ttc" id="aailayer__softmax__default_8h_html_a469403b690f21b4025bd5443bf6af11d"><div class="ttname"><a href="ailayer__softmax__default_8h.html#a469403b690f21b4025bd5443bf6af11d">ailayer_softmax_q7_default</a></div><div class="ttdeci">ailayer_t * ailayer_softmax_q7_default(ailayer_softmax_q7_t *layer, ailayer_t *input_layer)</div><div class="ttdoc">Initializes and connects an Softmax layer  with the Q7  default implementation.</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">*layer</td><td>The layer structure to initialize. </td></tr>
