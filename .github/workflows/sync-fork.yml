@@ -1,0 +1,25 @@
+name: Sync Fork
+
+on:
+  schedule:
+    - cron: '15 3 * * 0' # At 03:15 on Sunday
+  workflow_dispatch: # on button click
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target branch
+        uses: actions/checkout@v4
+        with:
+          ref: main # Change to <branch_name> if your default branch is different
+          fetch-depth: 0
+
+      - name: Sync with upstream
+        uses: aormsby/Fork-Sync-With-Upstream-action@v2.1
+        with:
+          upstream_repository: Fraunhofer-IMS/AIfES_for_Arduino
+          upstream_branch: main # Branch to pull from
+          target_branch: main # fork's branch
+          git_pull_args: --ff-only # Ensures clean history by avoiding merge commits
+          github_token: ${{ secrets.GITHUB_TOKEN }}
